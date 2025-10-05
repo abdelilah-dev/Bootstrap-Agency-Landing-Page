@@ -7,6 +7,7 @@
         <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Nexa - Bootstrap Agency and Landing Page Template</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     </head>
     <body>
         <div id="app"></div>
@@ -84,9 +85,9 @@
                         </div>
                     </div>
                     <div class="row justify-content-center mt-3">
-                        <div class="col-lg-8 pt-5">
+                        <div class="col-lg-8 pt-5" data-usal="split-item split-fade-u-0-100 split-delay-50 duration-1200">
                             <div class="img-box mb-5">
-                                <div data-usal="split-item split-fade-u-0-100 split-delay-50 duration-1200" class="hero-img rounded-4 overflow-hidden">
+                                <div class="hero-img rounded-4 overflow-hidden">
                                     <img src="/images/about/about-15.webp" class="w-100 " alt="">
                                 </div>
                             </div>
@@ -114,7 +115,7 @@
                         <div class="col-12 col-md-6 col-lg-3 px-3 mb-3 mb-md-0">
                             <div class="box">
                                 <div class="stat-icon">
-                                    <i class="fa-solid fa-lightning"></i>
+                                    <i class="fa-solid fa-bolt"></i>
                                 </div>
                                 <div class="count" data-usal="count-[95] duration-2000 once">95 <span>+</span></div>
                                 <span>Project Success</span>
@@ -123,7 +124,7 @@
                         <div class="col-12 col-md-6 col-lg-3 px-3 mb-3 mb-md-0">
                             <div class="box">
                                 <div class="stat-icon">
-                                    <i class="fa-solid fa-trophy"></i>
+                                    <i class="fa-solid fa-globe"></i>
                                 </div>
                                 <div class="count" data-usal="count-[12] duration-2000 once">12 <span>+</span></div>
                                 <span>Countries Served</span>
@@ -137,7 +138,7 @@
         <div class="about-section">
             <div class="container">
                 <div class="about-content">
-                    <div class="main-heading" data-usal="split-item split-fade-u-500 duration-1000 split-delay-100 threshold-100 ease-in-out">
+                    <div class="main-heading" data-usal="fade-u-200-100-0 duration-1000 ease-in-out">
                         <span>About</span>
                         <h1>About</h1>
                         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
@@ -155,7 +156,7 @@
                                     <div class="text">Years of Experience</div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 px-5" data-usal="split-item split-zoomin-l-200-50-0 split-delay-1000 duration-800">
+                            <div class="col-12 col-lg-6 px-5" data-usal="split-item split-zoomin-l-200-50-0 split-delay-800 duration-800">
                                 <h1 class="features-title">
                                     Empowering Businesses Through Innovative Solutions
                                 </h1>
@@ -213,7 +214,7 @@
             <div class="container">
                 <div class="service-content">
                     <div class="main-heading"
-                        data-usal="split-item split-fade-u-500 duration-1000 split-delay-100 threshold-100 ease-in-out">
+                        data-usal="fade-u-200-100-0 duration-1000 ease-in-out">
                         <span>Services</span>
                         <h1>Services</h1>
                         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
@@ -228,7 +229,7 @@
                                 <div class="service-info">
                                     <span class="service-number">01</span>
                                     <h1>Custom Application Development</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in
+                                    <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in
                                         semper nisl bibendum eu. Duis pellentesque.</p>
                                     <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
@@ -242,7 +243,7 @@
                                 <div class="service-info">
                                     <span class="service-number">02</span>
                                     <h1>Custom Application Development</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in
+                                    <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in
                                         semper nisl bibendum eu. Duis pellentesque.</p>
                                     <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
@@ -258,7 +259,7 @@
                                 <div class="service-info">
                                     <span class="service-number">03</span>
                                     <h1>Custom Application Development</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in
+                                    <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in
                                         semper nisl bibendum eu. Duis pellentesque.</p>
                                     <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
@@ -272,13 +273,12 @@
                                 <div class="service-info">
                                     <span class="service-number">04</span>
                                     <h1>Custom Application Development</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in
+                                    <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, in
                                         semper nisl bibendum eu. Duis pellentesque.</p>
                                     <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
-        
                     </div>
                     <div class="row" data-usal="split-item split-fade-u-0-100 split-delay-50 duration-1500">
                         <div class="cta-box col-lg-8 m-auto my-5">
@@ -290,17 +290,232 @@
                                 </div>
                                 <div class="box-info" data-usal="fade-l-20-0-100 duration-800 delay-200">
                                     <h3>Need a Custom Solution?</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
-</p>
+                                    <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                                        mattis.</p>
                                     <a href="" class="the-btn btn-bg-white">Schedule a Consultation</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="steps-section section-padding">
+                        <div class="container">
+                            <div class="steps-content">
+                                <div class="main-heading" data-usal="fade-u-200-100-0 duration-1000 ease-in-out">
+                                    <span>Steps</span>
+                                    <h1>Steps</h1>
+                                    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 m-auto mb-4" data-usal="fade-u-200-100-0 duration-1000 ease-in-out">
+                                        <div class="step-box">
+                                            <span class="step-number">01</span>
+                                            <div class="step-icon">
+                                                <i class="fa-regular fa-pen-to-square"></i>
+                                            </div>
+                                            <div class="step-info">
+                                                <h3>Project Planning</h3>
+                                                <p class="box-paragraph">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                                                    consequat vitae,
+                                                    eleifend ac, enim.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 m-auto mb-4" data-usal="fade-u-200-100-0 duration-1000 ease-in-out">
+                                        <div class="step-box">
+                                            <span class="step-number">02</span>
+                                            <div class="step-icon">
+                                                <i class="fa-solid fa-gear"></i>
+                                            </div>
+                                            <div class="step-info">
+                                                <h3>Development Phase</h3>
+                                                <p class="box-paragraph">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
+                                                    Etiam sit amet orci eget eros faucibus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 m-auto mb-4" data-usal="fade-u-200-100-0 duration-1000 ease-in-out">
+                                        <div class="step-box">
+                                            <span class="step-number">03</span>
+                                            <div class="step-icon">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </div>
+                                            <div class="step-info">
+                                                <h3>Testing & QA</h3>
+                                                <p class="box-paragraph">Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                                                    Vestibulum volutpat pretium libero.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 m-auto mb-4" data-usal="fade-u-200-100-0 duration-1000 ease-in-out">
+                                        <div class="step-box">
+                                            <span class="step-number">01</span>
+                                            <div class="step-icon">
+                                                <i class="fa-solid fa-rocket"></i>
+                                            </div>
+                                            <div class="step-info">
+                                                <h3>Launch & Support</h3>
+                                                <p class="box-paragraph">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                                                    Maecenas nec odio et ante tincidunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-section section-padding">
+                        <div class="container">
+                            <div class="testimonial-content">
+                                <div class="main-heading" data-usal="fade-u-200-100-0 duration-1000 ease-in-out">
+                                    <span>Testimonials</span>
+                                    <h1>Testimonials</h1>
+                                    <p> Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                                </div>
+                                <!-- <div class="swiper testimonialSwiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">Slide 1</div>
+                                                            <div class="swiper-slide">Slide 2</div>
+                                                            <div class="swiper-slide">Slide 3</div>
+                                                            <div class="swiper-slide">Slide 4</div>
+                                                            <div class="swiper-slide">Slide 5</div>
+                                                            <div class="swiper-slide">Slide 6</div>
+                                                            <div class="swiper-slide">Slide 7</div>
+                                                            <div class="swiper-slide">Slide 8</div>
+                                                            <div class="swiper-slide">Slide 9</div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                    </div> -->
+                                <div class="rwo swiper testimonialSwiper" data-usal="fade-u-200-100-0 duration-1000 ease-in-out">
+                                    <div class="col swiper-wrapper">
+                                        <div class="testi-box swiper-slide">
+                                            <div class="top-content">
+                                                <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                                    rhoncus. Accusantium quam, ultricies
+                                                    eget id, aliquam eget nibh.</p>
+                                            </div>
+                                            <div class="bottom-content">
+                                                <span class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <div class="testi-info">
+                                                    <img src="/images/person/person-m-5.webp" alt="">
+                                                    <div>
+                                                        <h4>Sarah Thompson</h4>
+                                                        <h5>Marketing Director</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testi-box swiper-slide">
+                                            <div class="top-content">
+                                                <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                                    rhoncus. Accusantium quam, ultricies
+                                                    eget id, aliquam eget nibh.</p>
+                                            </div>
+                                            <div class="bottom-content">
+                                                <span class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <div class="testi-info">
+                                                    <img src="/images/person/person-m-5.webp" alt="">
+                                                    <div>
+                                                        <h4>Sarah Thompson</h4>
+                                                        <h5>Marketing Director</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testi-box swiper-slide">
+                                            <div class="top-content">
+                                                <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                                    rhoncus. Accusantium quam, ultricies
+                                                    eget id, aliquam eget nibh.</p>
+                                            </div>
+                                            <div class="bottom-content">
+                                                <span class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <div class="testi-info">
+                                                    <img src="/images/person/person-m-5.webp" alt="">
+                                                    <div>
+                                                        <h4>Sarah Thompson</h4>
+                                                        <h5>Marketing Director</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testi-box swiper-slide">
+                                            <div class="top-content">
+                                                <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                                    rhoncus. Accusantium quam, ultricies
+                                                    eget id, aliquam eget nibh.</p>
+                                            </div>
+                                            <div class="bottom-content">
+                                                <span class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <div class="testi-info">
+                                                    <img src="/images/person/person-m-5.webp" alt="">
+                                                    <div>
+                                                        <h4>Sarah Thompson</h4>
+                                                        <h5>Marketing Director</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="testi-box swiper-slide">
+                                            <div class="top-content">
+                                                <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                                    rhoncus. Accusantium quam, ultricies
+                                                    eget id, aliquam eget nibh.</p>
+                                            </div>
+                                            <div class="bottom-content">
+                                                <span class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <div class="testi-info">
+                                                    <img src="/images/person/person-m-5.webp" alt="">
+                                                    <div>
+                                                        <h4>Sarah Thompson</h4>
+                                                        <h5>Marketing Director</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
                 </div>
             </div>
         </div>
         <script src="https://cdn.usal.dev/latest"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> -->
+
         <script type="module" src="/src/main.js"></script>
     </body>
 </html>

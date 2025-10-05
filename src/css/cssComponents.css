@@ -1,4 +1,7 @@
-
+.section-padding {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
 
 .the-btn {
     padding: 15px 20px;
@@ -61,4 +64,9 @@
     color: var(--default-color);
     text-transform: none;
     font-size: 18px;
+}
+
+.box-paragraph {
+        font-size: 18px;
+            color: var(--default-color);
 }
