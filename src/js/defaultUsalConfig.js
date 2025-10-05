@@ -3,7 +3,7 @@ window.USAL.config({
         animation: "fade",      // Default animation type
         direction: "u",         // Direction (u, d, l, r, ul, ur, dl, dr)
         duration: 1000,         // Animation duration (ms)
-        delay: 50,               // Animation delay (ms)
+        delay: 0,               // Animation delay (ms)
         threshold: 10,          // Viewport threshold (%)
         splitDelay: 30,         // Delay between split items (ms)
         forwards: false,        // Keep final animation state
