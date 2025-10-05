@@ -8,6 +8,7 @@
     font-size: 21px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    display: block;width: fit-content;;
 }
 .primary-btn {
     color: white;
@@ -15,11 +16,20 @@
     border: 2px solid var(--primary-green-color);
     transition: 0.5s;
 }
+.the-btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.13);
+}
+.btn-bg-white {
+    color: black !important;
+    background-color: white;
+}
 .primary-btn:hover {
     transform: translateY(-5px);
     box-shadow:0px 2px 13px var(--primary-green-color) ;
 }
 .scondary-btn {}
+
 .main-heading {
     text-align: center;
     color: white;
