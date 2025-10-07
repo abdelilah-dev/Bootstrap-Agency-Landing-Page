@@ -14,13 +14,18 @@ filterItems.forEach(fitem => {
     fitem.addEventListener("click", event => {
         filterItems.forEach(fitem => fitem.classList.remove("active"));
         fitem.classList.add("active");
+        portfolioItems.forEach(ele => ele.removeAttribute('data-usal'))
         if (fitem.dataset.filter == "all") {
-            portfolioItems.forEach(ele => ele.classList.remove("d-none"));
+            portfolioItems.forEach(ele => {
+                ele.setAttribute('data-usal', 'fade-u duration-800')
+                ele.classList.remove("d-none")
+            });
         } else {
             portfolioItems.forEach(ele => {
                 if (ele.dataset.itemstype == fitem.dataset.filter) {
                     if (ele.classList.contains("d-none"))
                         ele.classList.remove("d-none");
+                        ele.setAttribute('data-usal', 'fade-u duration-700')
                 } else {
                     ele.classList.add("d-none");
                 }
