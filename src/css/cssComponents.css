@@ -1,3 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+body {
+    font-family: var(--default-font-family);
+    background-color: #000;
+    color: white;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.container {
+    overflow: hidden;
+}
+
+
 .section-padding {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);

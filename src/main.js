@@ -33,3 +33,12 @@ filterItems.forEach(fitem => {
         }
     })
 })
+
+// faq section
+let faqHeader = document.querySelectorAll(".faq-header");
+
+faqHeader.forEach((ele, index) => {
+    ele.addEventListener("click", event => {
+        document.querySelectorAll(".faq-item")[index].classList.toggle("faq-active");
+    })
+})

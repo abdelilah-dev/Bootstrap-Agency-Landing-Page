@@ -3,30 +3,6 @@
 @import url('./css/cssComponents.css') ;
 /* @import '/node_modules/sal.js/dist/sal.css'; */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: 1s;
-}
-body {
-    font-family: var(--default-font-family);
-    background-color: #000;
-    color: white;
-    transition: 0.3s;
-}
-ul {
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: #fff !important;
-}
-
-.container {
-    overflow: hidden;
-}
-
 /* Start Lading SEction  */
 .landing-section {
     width: 100%;
@@ -684,4 +660,187 @@ a{
     }
 }
 
-/* STart Team Section */
+/* End Team Section */
+/* STart pricing section  */
+.pricing-section {}
+
+.pricing-section .plan-box {
+    padding: 2rem 10px;
+    background: var(--scondary-bg-color);
+    border-radius: 1rem;
+    text-align: center;
+    transition: 0.5s;
+    height: 100%;
+}
+
+.pricing-section .plan-box.pro {
+    background: #0088702e;
+    border: 2px solid var(--primary-green-color);
+}
+.pricing-section .plan-box:hover {
+    transform: translateY(-10px);
+}
+.pricing-section .plan-box .plan-content>h2 {
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+.pricing-section .plan-box.pro .plan-content h2 {
+    color: var(--primary-green-color);
+}
+.pricing-section .plan-box .plan-content>h4 {}
+
+.pricing-section .plan-box .plan-content>h4 sup {
+    top: -20px;
+    font-size: 1.4rem;
+    color: var(--primary-green-color);
+}
+
+.pricing-section .plan-box .plan-content>h4 span {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--primary-green-color);
+    margin: 0 10px;
+}
+
+.pricing-section .plan-box .plan-content ul li {
+    text-align: start;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pricing-section .plan-box .plan-content ul li.valid {
+    i {
+        color: var(--primary-green-color);
+    }
+
+    span {
+        color: var(--default-color);
+    }
+}
+
+.pricing-section .plan-box .plan-content ul li.invalid {
+    i {
+        color: #5e5e5e;
+    }
+
+    span {
+        color: #5e5e5e;
+    }
+}
+
+/* End pricing section */
+/* Start faq section  */
+.faq-wrapper {}
+
+.faq-wrapper {}
+
+.faq-wrapper .faq-item {
+    background: var(--scondary-bg-color);
+    border-radius: 10px;
+    border-left: 6px solid transparent;
+    transition: 0.4s;
+}
+
+.faq-wrapper .faq-item.faq-active,
+.faq-wrapper .faq-item:hover {
+    border-left-color: var(--primary-green-color);
+}
+
+.faq-item .faq-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.faq-item .faq-header .faq-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #0088704a;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+}
+
+.faq-item.faq-active .faq-header .faq-toggle {
+    i {
+        background-color: var(--primary-green-color);
+    }
+
+    .fa-plus {
+        opacity: 0;
+    }
+
+    .fa-minus {
+        opacity: 1;
+    }
+}
+
+.faq-item .faq-header .faq-toggle {
+    position: relative;
+
+    i {
+        width: 30px;
+        height: 30px;
+        background: rgb(78 78 78 / 80%);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        font-size: 16px;
+        transition: 0.5s ease-out;
+        position: absolute;
+        top: 50%;
+        left: 50;
+        transform: translate(-50%, -50%);
+    }
+
+    .fa-plus {
+        opacity: 1;
+    }
+
+    .fa-minus {
+        opacity: 0;
+    }
+}
+
+.faq-item.faq-active .faq-header {
+    h4 {
+        color: var(--primary-green-color);
+    }
+
+    .faq-icon {
+        background-color: var(--primary-green-color);
+    }
+}
+
+.faq-item .faq-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.faq-item.faq-active .faq-content {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    opacity: 1;
+}
+
+.faq-item .faq-content>div {
+    padding: 0 25px 25px 25px;
+    overflow: hidden;
+}
+
+.faq-content>div p {
+    margin: 0;
+    font-size: 18px;
+    color: var(--default-color);
+}
+
+/* Start faq section */
