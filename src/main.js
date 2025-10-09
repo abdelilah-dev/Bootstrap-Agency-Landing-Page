@@ -42,3 +42,16 @@ faqHeader.forEach((ele, index) => {
         document.querySelectorAll(".faq-item")[index].classList.toggle("faq-active");
     })
 })
+
+// contact section
+let inputs = [...document.querySelectorAll("input"), document.querySelector("textarea")];
+console.log(inputs);
+inputs.forEach(ele => {
+    ele.addEventListener("blur", event => {
+        console.log("hehehehehe");
+        if (ele.value != "")
+            ele.classList.add("filled");
+        else
+            ele.classList.remove("filled");
+    })
+})

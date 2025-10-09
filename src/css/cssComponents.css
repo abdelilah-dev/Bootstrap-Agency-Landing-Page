@@ -10,6 +10,7 @@ body {
     background-color: #000;
     color: white;
     transition: 0.3s;
+    height: 10000px;
 }
 
 ul {
@@ -26,6 +27,9 @@ a {
     overflow: hidden;
 }
 
+p {
+    margin: 0;
+}
 
 .section-padding {
     padding-top: var(--section-padding);
@@ -58,7 +62,7 @@ a {
 }
 .primary-btn:hover {
     transform: translateY(-5px);
-    box-shadow:0px 2px 13px var(--primary-green-color) ;
+    box-shadow: 0px 2px 13px #00887073;
 }
 .scondary-btn {}
 
