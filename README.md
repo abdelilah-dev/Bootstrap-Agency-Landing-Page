@@ -1,3 +1,5 @@
+[preview img](./public/images/preview.png)
+
 # 🚀 Modern Agency Landing Page
 A sleek, fully responsive agency landing page built from scratch with modern web technologies. This project showcases advanced front-end development skills including smooth animations, interactive components, and professional UI/UX design principles.
 ✨ Features
